@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppBhaskara</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Calculador de Delta <br> <em>e Bhaskara</em></h1>
+    <br>
+    <form action="">
+        <label for="">Digite o valor de a:</label>
+        <input type="number" placeholder="0" id="inptA">
+        
+        <label for="">Digite o valor de b:</label>
+        <input type="number" placeholder="0" id="inptB">
+        
+        <label for="">Digite o valor de c:</label>
+        <input type="number" placeholder="0" id="inptC">
+        
+        <button type="button" id="btn" onclick="calcular()">Calcular</button>
+    </form>
+    <br>
+    <div id="res"></div>
+    <script src="calculos.js"></script>
+</body>
+</html>
