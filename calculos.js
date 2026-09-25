@@ -17,3 +17,11 @@ function calcular() {
     document.getElementById("inptB").value = 0;
     document.getElementById("inptC").value = 0;
     }
+function modoClaro(){
+    const tema = document.getElementById("tema");
+    const body = document.body;
+
+    tema.addEventListener('click', ()=> {
+        body.classList.toggle('light-mode');
+    });
+}

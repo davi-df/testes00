@@ -3,26 +3,38 @@
     margin: 0;
     padding: 0;
 }
-
+:root{
+    --cor-funBody: #0F172A;
+    --cor-texForm: #F8FAFC;
+    --cot-textH1: #1D4ED8;
+    --cor-funForm: #1E293B;
+    --cor-texEm:  #3B82F6; 
+    --cor-funInput: #334155;
+    --cor-texInput: #F8FAFC;
+}
+body.light-mode{
+    --cor-funBody: #ffff;
+}
 body{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column; 
-    background-color: #0F172A;
+    background-color: var(--cor-funBody);
     font-family: "Montserrat", sans-serif;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 h1{
-    color: #1D4ED8;
+    color: var(--cot-textH1);
     margin-top: 10px;
 }
 em{
-    color: #3B82F6;
+    color:var(--cor-texEm);
 }
 form{
-    background-color: #1E293B;
-    color: #F8FAFC;
+    background-color: var(--cor-funForm);
+    color: var(--cor-texForm);
     border-radius: 25px;
     width: 400px;
     height: 350px;
@@ -36,8 +48,8 @@ form{
     transition: 0.8s;
 }
 input{
-    background-color: #334155;
-    color: #F8FAFC;
+    background-color: var(--cor-funInput);
+    color: var(--cor-texInput);
 }
 input:focus{
     outline: none;
@@ -55,17 +67,24 @@ form input,label{
     font-size: 20px;
 }
 
-button{
+#btn{
     border: none;
     border-radius: 20px;
     padding: 10px 20px;
     font-size: 15px;
     background-color: #3B82F6;
 }
-button:hover{
+#tema{
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #3B82F6;
+}
+#btn:hover{
     background-color: #1D4ED8;
 }
-#teste{
+#res{
     padding: 10px;
     background-color: #1E293B;
     font-size: 20px;
@@ -81,7 +100,7 @@ button:hover{
     form{
         width: 90%;
     }
-    #teste{
+    #res{
         width: 90%;
     }
 }
